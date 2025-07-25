@@ -1,0 +1,74 @@
+@media (max-width:700px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav h4{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .search{
+        width: 90%;
+        gap: 0;
+    }
+
+    .LoginLogo{
+        display: none;
+    }
+
+    #searchMovies{
+       padding:  1rem 4em 1rem 1.5rem;
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    .movieInfo h3{
+        font-size: 1rem;
+    }
+
+    .movieInfo p{
+        font-size: 0.9rem;
+    }
+
+    #searchMovies::placeholder{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:900px) and (min-width:700px){
+    .search{
+        width: 70%;
+    }
+
+    .card{
+        width: 32vw;
+    }
+
+   
+}
+
+@media (max-width:1200px) and (min-width:900px){
+    .card{
+        width: 26vw;
+        
+    }
+
+    .search{
+        width: 80%;
+    }
+}

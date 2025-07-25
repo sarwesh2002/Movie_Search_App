@@ -1,0 +1,206 @@
+/* nav ,  card and footer bar color : #1a242f; */
+/* background color #0f171e */
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(to right, #061161, #780206);
+    font-family: "Poppins", sans-serif;
+    color: #fcfcfc;
+}
+
+/* nav section css */
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(249, 211, 180, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+nav h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(249, 211, 180, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+#searchMovies {
+    padding: 1.5rem 4em 1.5rem 2rem;
+    border: none;
+    border-radius: 4rem;
+    width: 100%;
+    background-color: #1f2123;
+    color: #a1a1a1;
+    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+    font-size: 1rem;
+}
+
+#searchMovies::placeholder {
+    color: #616161;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    overflow: auto;
+}
+
+#searchMovies:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+
+
+.searchLogo {
+    width: 1.5rem;
+    position: absolute;
+    right: 1.5rem;
+}
+
+
+#searchMovies,
+.searchLogo {
+    transition: all 0.3s ease;
+}
+
+.searchLogo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ #noResults {
+      display: none;
+      text-align: center;
+      font-size: 2rem;
+      color: #ccc;
+      margin-top: 2rem;
+    }
+
+
+/* section css */
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    display: none;
+}
+
+.card {
+    /* border: 2px solid red; */
+    height: auto;
+    width: 16vw;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    border-radius: 2rem;
+    background-color: #1f2123;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.movieInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1rem;
+}
+
+#movieTitle {
+    margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#movieOverView {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#movieRating {
+    margin-left: 1rem;
+}
+
+#movieDetails{
+    font-size: 0.66rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.overView {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2123;
+    text-align: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+}
+
+.card:hover .overView {
+    display: flex;
+    transform: translateY(0%);
+}
+
+
+/* footer css */
+
+footer {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
