@@ -19,10 +19,10 @@ This app supports both **desktop** and **mobile** views with a dark UI theme for
 ## 📷 Screenshots
 
 ### 💻 Desktop View  
-![Desktop View](./screenshots/desktop.png)
+![Desktop View](./screenshots/1.png)
 
 ### 📱 Mobile View  
-![Mobile View](./screenshots/mobile.png)
+![Mobile View](./screenshots/2.png)
 
 ---
 
